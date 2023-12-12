@@ -28,7 +28,7 @@
       li {
         display: inline;
         text-align: left;
-        padding: 10px 35px;
+        padding: 10px 5px;
       }
 
       li a {
@@ -38,39 +38,6 @@
 
       li a:hover {
         color: orange;
-      }
-
-      .gallery-container {
-        display: flex;
-        overflow-x: hidden;
-        padding-left: 45px;
-      }
-
-      .gallery-item {
-        margin-right: 5px;
-        position: relative;
-        width: 520px;
-        height: 350px;
-        border-radius: 20px;
-
-      }
-
-      .gallery-item img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-      }
-      
-      .KinhNam, 
-      .HoiAn,
-      .DaNang {
-        text-align: center;
-        padding: 10px;
-        color: white;
-        position: absolute;
-        bottom: 30px;
-        width: 100%;
       }
 
       h1 {
@@ -92,22 +59,14 @@
          padding-left: 45px;
       }
 
-      .description {
-        color: black;
-        font-size: 20px;
-        width: 60%;
-      }
-
       .header-image img {
         padding-left: 30px;
         width: 300px;
         margin-bottom: -60px;
       }
 
-      /* Added styles for the footer */
       footer {
         background-color: #E3C6D3;
-        color: black;
         text-align: center;
         padding: 10px;
         position: fixed;
@@ -115,19 +74,26 @@
         width: 100%;
       }
       
-     table {
-        margin: 40; 
-        width: 70%;
-        text-align: center; 
-        border-collapse: collapse;
-        margin-top: 20px;
+      .gallery {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent image wrapping */
+        padding: 0px;
       }
-      
-      th, td {
-        border: 5px solid pink;
-        padding: 10px;
+
+      .gallery img {
+        width: 500px;
+        height: 700px;
+        object-fit: cover;
+        margin-left: 35px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s;
       }
-      
+
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+    
     </style>
   </head>
 
@@ -142,64 +108,26 @@
       <h1>Vietnam</h1>
     </header>
 
-    <div class="description">
-      <p> Explore the beauty and culture of Vietnam with me
-        as I take you along to discover exciting destinations, delicious food, and cherished memories from my family trip this summer.</p>
-    </div>
-
     <ul>
       <li><a href="#">HOME</a></li>
       <li><a href="#">DESTINATIONS</a></li>
       <li><a href="#">FOOD</a></li>
       <li><a href="#">MEMORIES</a></li>
     </ul>
-    <h2>Vietnam Travel</h2>
-
-    <!-- make into slides later -->
-    <div class="gallery-container">
-      <div class="gallery-item">
-        <img src="Kinh 5.jpg" alt="Vietnam Image 1">
-        <div class="KinhNam">Caption for Image 1</div>
-      </div>
-      <div class="gallery-item">
-        <img src="Hoi An.jpg" alt="Vietnam Image 2">
-        <div class="HoiAn">Caption for Image 2</div>
-      </div>
-      <div class="gallery-item">
-        <img src="Da Nang.jpg" alt="Vietnam Image 3">
-        <div class="DaNang">Caption for Image 3</div>
-      </div>
-      <!-- Add more images as needed -->
-
+    <h2>Food</h2>
+    <p> blah blah</p>
+    
+    <div class="gallery">
+      <img src="pho.jpg" alt="Food 1">
+      <img src="nem nuong.jpg" alt="Food 2">
+      <img src="BBH.jpg" alt="Food 3">
+      <img src="banh xeo.jpg" alt="Food 1">
+      <img src="bo la lot.jpg" alt="Food 2">
+      <img src="egg coffee.jpg" alt="Food 3">
+      <img src="home meal.jpg" alt="Food 1">
+      <img src="meat.jpg" alt="Food 2">
     </div>
-    
-    <h3>Vietnam Weather</h3>
-    <p>Wondering when you should plan your trip for Vietnam? I would reccomend the winter season!</p>
-    
-    <table style="width:70%">
-  <tr>
-    <th>Region</th>
-    <th>Summer</th>
-    <th>Winter</th>
-  </tr>
-  <tr>
-    <td>North Vietnam</td>
-    <td>hot and rainy</td>
-    <td>mild and dry</td>
-  </tr>
-  <tr>
-    <td>Central Vietnam</td>
-    <td>hot and rainy</td>
-    <td>hot and dry</td>
-  </tr>
-  <tr>
-    <td>South Vietnam</td>
-    <td>hot, humid, and rainy</td>
-    <td>cool and dry</td>
-  </tr>
-</table>
-
-    <!-- Footer with email link -->
+  
     <footer>
       <p>Contact me: <a href="mailto:mn5pham@uwaterloo.ca">mn5pham@uwaterloo.ca</a></p>
     </footer>
